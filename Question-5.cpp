@@ -23,3 +23,34 @@ int main()
 
     return 0;
 }
+
+
+
+
+// approach 2 without using temp variable
+
+
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+    int n,m;
+    cout<<"Enter rows ";
+    cin>>n;
+    cout<<"Enter coloumns ";
+    cin>>m;
+    
+        int counter=1;
+        for(int i=0 ; i<n ; i++){
+            for(int j=0 ; j<i ; j++){
+                cout<<j+i<<" ";
+            }
+         
+            cout<<endl;
+        }
+
+    return 0;
+}
