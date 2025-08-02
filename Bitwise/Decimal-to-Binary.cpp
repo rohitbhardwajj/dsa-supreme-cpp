@@ -67,3 +67,39 @@ int main() {
     return 0;
 }
 
+
+
+// approach-----4  using bits
+
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter a decimal number: ";
+    cin >> n;
+
+    string ans = "";
+
+    if (n == 0) {
+        ans = "0";
+    }
+
+    while (n != 0) {
+        if (n & 1) {
+            ans += "1";
+        } else {
+            ans += "0";
+        }
+        n >>= 1;
+    }
+
+    reverse(ans.begin(), ans.end()); 
+
+    cout << "Binary: " << ans;
+    return 0;
+}
+
