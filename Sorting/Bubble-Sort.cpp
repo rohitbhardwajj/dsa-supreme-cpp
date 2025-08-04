@@ -19,12 +19,11 @@ int main()
     }
     cout << endl;
 
-    // Bubble Sort Algorithm
+    
     for (int i = 0; i < n - 1; i++) {
         // Last i elements are already in place
         for (int j = 0; j < n - i - 1; j++) {
             if (arry[j] > arry[j + 1]) {
-                // Swap adjacent elements if they are in wrong order
                 swap(arry[j], arry[j + 1]);
             }
         }
