@@ -19,9 +19,8 @@ int main()
     }
     cout << endl;
 
-    
-    for (int i = 0; i < n - 1; i++) {
-        // Last i elements are already in place
+
+    for (int i = 0; i < n; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (arry[j] > arry[j + 1]) {
                 swap(arry[j], arry[j + 1]);
