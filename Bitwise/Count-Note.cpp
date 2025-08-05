@@ -31,3 +31,27 @@ int main() {
 
     return 0;
 }
+
+
+// approach-------2
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, hundred = 0, fifty = 0;
+    cout << "Enter a number : ";
+    cin >> n;
+
+    hundred = n / 100;
+    n = n % 100;
+
+    fifty = n / 50;
+    n = n % 50;
+
+    cout << "100 = " << hundred << endl;
+    cout << "50 = " << fifty << endl;
+
+    return 0;
+}
