@@ -63,3 +63,40 @@ int main()
     }
 }
 
+
+
+// 3-----------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+
+    int arry[n];
+    cout << "Enter numbers in the array (only one number appears twice): ";
+
+    for (int i = 0; i < n; i++) {
+        cin >> arry[i];
+    }
+
+    int xorResult = 0;
+
+    // XOR all array elements
+    for (int i = 0; i < n; i++) {
+        xorResult ^= arry[i];
+    }
+
+    // XOR all numbers from 1 to n-1
+    for (int i = 1; i < n; i++) {
+        xorResult ^= i;
+    }
+
+    cout << "Duplicate number is: " << xorResult << endl;
+
+    return 0;
+}
+
+
